@@ -1,14 +1,20 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import Home from './components/Home'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import HealthSoultions from './components/HealthSolutions'
+import NavBar from './components/NavBar'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
+  },
+  {
+    path: '/sample-project',
+    element: <HealthSoultions />,
   },
 ])
 
