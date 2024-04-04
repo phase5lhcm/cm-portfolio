@@ -3,7 +3,6 @@ import * as ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import Home from './components/Home'
-// Importing the Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const router = createBrowserRouter([
