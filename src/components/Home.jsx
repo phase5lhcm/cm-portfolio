@@ -4,50 +4,51 @@ import Col from 'react-bootstrap/Col'
 import NavBar from './NavBar'
 import christine from '../assets/images/christine.jpg'
 import background from '../assets/images/background.jpeg'
+import Introduction from './Introduction'
+
 function Home() {
   return (
     <>
       <Container
-        style={{ backgroundImage: `url(${background})`, color: '#ffffff' }}
+        style={{
+          backgroundImage: `url(${background})`,
+          color: '#ffffff',
+        }}
       >
         <NavBar />
+        <Row className="text-center py-4">
+          <Col>
+            <Introduction />
+          </Col>
+        </Row>
         <Row>
           <Col></Col>
           <Col>
             {' '}
-            <img
-              src={christine}
-              className="img-fluid"
-              alt="Christine"
-              style={{ paddingTop: '2em' }}
-            />
+            <img src={christine} className="img-fluid" alt="Christine" />
           </Col>
           <Col></Col>
         </Row>
 
-        <Row className="text-center py-4">
-          {' '}
-          <h2>Experience</h2>
-        </Row>
         <Row>
           <Col>
-            <h3>Fullstack Java Developer</h3>
-            <h5>Cvent</h5>
+            <h5 className="text-center" style={{ paddingTop: '10px' }}>
+              Fullstack Java Developer | Cvent | May 2020 - June 2023
+            </h5>
+
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
-              officia quibusdam placeat nobis enim aut? Veritatis dignissimos
-              quo architecto placeat, alias perspiciatis dolor adipisci commodi.
-              Totam facilis architecto quo temporibus?
+              Fullstack Software Developer for Cvent's Planner Navigator
+              application and its ecoysystem of microservices.
             </p>
           </Col>
           <Col>
-            <h3>Software Engineer</h3>
-            <h5>Citigroup</h5>
+            <h5 className="text-center" style={{ paddingTop: '10px' }}>
+              Software Engineer | Citigroup | Aug 2023 - present
+            </h5>
+
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
-              officia quibusdam placeat nobis enim aut? Veritatis dignissimos
-              quo architecto placeat, alias perspiciatis dolor adipisci commodi.
-              Totam facilis architecto quo temporibus?
+              Production Support Engineer supporting Citigroup's internal
+              Facility Management Elastic Cloud Container services
             </p>
           </Col>
         </Row>

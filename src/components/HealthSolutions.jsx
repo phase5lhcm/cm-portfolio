@@ -4,11 +4,14 @@ import Col from 'react-bootstrap/Col'
 import healthsolutions from '../assets/images/healthsolutions.jpeg'
 import NavBar from './NavBar'
 import Button from 'react-bootstrap/Button'
+import background from '../assets/images/background.jpeg'
 
 function HealthSolutions() {
   return (
     <>
-      <Container style={{ backgroundColor: '#000', color: '#fff' }}>
+      <Container
+        style={{ backgroundImage: `url(${background})`, color: '#ffffff' }}
+      >
         <NavBar />
         <Row>
           <Col>
