@@ -29,7 +29,9 @@ function NavBar() {
             <Nav.Link as={NavLink} to="/sample-project">
               Sample Project
             </Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link as={NavLink} to="/contact">
+              Contact
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>

@@ -6,6 +6,7 @@ import './index.css'
 import Home from './components/Home'
 import HealthSoultions from './components/HealthSolutions'
 import NavBar from './components/NavBar'
+import ContactForm from './components/ContactForm'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/sample-project',
     element: <HealthSoultions />,
+  },
+  {
+    path: '/contact',
+    element: <ContactForm />,
   },
 ])
 
